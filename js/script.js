@@ -14,6 +14,16 @@ class Calculator{
     subtraction(n1, n2){
         return n1 - n2;
     }
+
+    divide(n1, n2){
+        try{
+            if(n2 === 0){
+                throw new Error("Divisão por zero");
+            }
+            return n1 / n2;
+        } catch (error){
+            return `Erro: ${error.mesage}`;        }
+    }
 }
 
 //criando o objeto
@@ -28,4 +38,8 @@ console.log(resultado);
 
 //chamando o método de subtração
 let teste = calc.subtraction(5,4);
+console.log(teste);
+
+//chamando o método de divisão
+teste = calc.divide(10,5);
 console.log(teste);
