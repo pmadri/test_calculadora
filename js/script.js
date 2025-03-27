@@ -28,6 +28,10 @@ class Calculator{
     multiplication(n1, n2){
         return n1 * n2;
     }
+
+    btnPress(){
+        
+    }
 }
 
 //criando o objeto
@@ -51,3 +55,7 @@ console.log(teste);
 //chamando o método de divisão
 teste = calc.multiplication(2,2);
 console.log(teste);
+
+for(let i=0; buttons.lenght > i; i++){
+    buttons[i].addEventListener('click',calc.btnPress);
+}
