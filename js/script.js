@@ -24,6 +24,10 @@ class Calculator{
         } catch (error){
             return `Erro: ${error.mesage}`;        }
     }
+
+    multiplication(n1, n2){
+        return n1 * n2;
+    }
 }
 
 //criando o objeto
@@ -42,4 +46,8 @@ console.log(teste);
 
 //chamando o método de divisão
 teste = calc.divide(10,5);
+console.log(teste);
+
+//chamando o método de divisão
+teste = calc.multiplication(2,2);
 console.log(teste);
